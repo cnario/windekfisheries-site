@@ -1,7 +1,8 @@
-.owl-carousel, .owl-stage-outer {
-    touch-action: pan-y !important; /* allow vertical scrolling */
+/* Fix: allow vertical scroll while keeping horizontal swipe for hero slider */
+.home-slider.owl-carousel,
+.home-slider .owl-stage-outer {
+    touch-action: pan-y !important;
 }
-
 
 /* Smaller logo on mobile devices */
 @media (max-width: 767.98px) {
