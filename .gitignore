@@ -20,4 +20,6 @@ pnpm-debug.log*
 Thumbs.db
 
 .env
+*:Zone.Identifier
+
 
