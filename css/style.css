@@ -1,8 +1,23 @@
 /* Fix: allow vertical scroll while keeping horizontal swipe for hero slider */
-.home-slider.owl-carousel,
-.home-slider .owl-stage-outer {
-    touch-action: pan-y !important;
+/* let vertical pans pass through, and stop the overlay from blocking touches */
+.home-slider,
+.home-slider .owl-stage-outer,
+.home-slider .owl-stage,
+.home-slider .owl-item {
+    touch-action: pan-y;
+    -ms-touch-action: pan-y; /* old IE/Edge */
 }
+
+/* If overlay is fully transparent it should not block pointer events */
+.home-slider .slider-item .overlay {
+    pointer-events: none;
+}
+
+/* ensure page can scroll */
+html, body {
+    overflow: auto !important;
+}
+
 
 /* Smaller logo on mobile devices */
 @media (max-width: 767.98px) {
