@@ -1,0 +1,23 @@
+# Custom project exclusions
+export.js
+project_export.md
+
+# Node & package manager artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vercel project folder
+.vercel/
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+.env
+
