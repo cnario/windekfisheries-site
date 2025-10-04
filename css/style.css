@@ -1,8 +1,14 @@
+.owl-carousel, .owl-stage-outer {
+    touch-action: pan-y !important; /* allow vertical scrolling */
+}
 
 
 /* Smaller logo on mobile devices */
 @media (max-width: 767.98px) {
     .navbar-brand img {
         height: 35px;    /* shrink logo height on small screens */
+    }
+    .navbar-brand {
+        font-size: 1rem !important;   /* smaller site name text */
     }
 }
