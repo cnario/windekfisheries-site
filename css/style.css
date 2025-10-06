@@ -18,11 +18,28 @@ html, body {
     overflow: auto !important;
 }
 
+@media (min-width: 767.99px) {
+    .navbar-brand img.white_logo {
+        display: none !important;
+    }
+}
 
 /* Smaller logo on mobile devices */
 @media (max-width: 767.98px) {
     .navbar-brand img {
         height: 35px;    /* shrink logo height on small screens */
+    }
+
+    .navbar-brand img.default_logo {
+        display: none !important;
+    }
+
+    .scrolled .navbar-brand img.default_logo {
+        display: inline-block !important;
+    }
+
+    .scrolled .navbar-brand img.white_logo {
+        display: none !important;
     }
     .navbar-brand {
         font-size: 1rem !important;   /* smaller site name text */
